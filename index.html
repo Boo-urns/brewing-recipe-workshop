@@ -1,25 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Intro to Homebrewing</title>
+	<title>Advanced Homebrewing</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
-</head>
-<body class="list">
-	<header class="caption">
-		<h1>Introduction to Homebrewing</h1>
-		<p>Corey Burns <a href="mailto:coreyaburns@gmail.com">coreyaburns@gmail.com</a></p>
-	</header>
-	<section class="slide cover" id="Cover"><div>
-		<h2>Introduction to Homebrewing</h2>
-		<p>Brought to you by <a href="mailto:coreyaburns@gmail.com">Corey Burns</a></p>
-		<img src="pictures/cover.jpg" alt="">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
 		<style>
 			#Cover h2 {
 				margin:30px 0 0;
@@ -27,6 +13,10 @@
 				text-align:center;
 				font-size:70px;
 				}
+			h3 {
+				font-size: 28px;
+				font-weight: bold;
+			}
 			#Cover p {
 				margin:10px 0 0;
 				text-align:center;
@@ -35,7 +25,7 @@
 				font-size:20px;
 				}
 				#Cover p a {
-					color:#FFF;
+					color:#000;
 					}
 				.slide ol li,
 				.slide ul li {
@@ -46,7 +36,29 @@
 				.full .progress div {
 					border-bottom-color: #A6C154;
 				}
+				.cover h2 { color: #fff; }
+				img.floatl {
+					float: left;
+				}
+				ul.floatl {
+					float: left;
+					margin-left: 50px;
+					width: 50%;
+				}
+
+				.cover p span { padding: 5px 20px; background: rgba(255,255,255, 0.75); color: #000; }
 		</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Advanced Homebrewing</h1>
+		<p>Corey Burns <a href="mailto:coreyaburns@gmail.com">coreyaburns@gmail.com</a></p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Advanced Homebrewing</h2>
+		<p><span>Brought to you by <a href="mailto:coreyaburns@gmail.com">Corey Burns</a></span></p>
+		<img src="pictures/sparging-cover.jpg" alt="">
+	
 	</div></section>
 	
 
@@ -54,15 +66,16 @@
 		<div>
 			<h2>Overview of Workshop</h2>
 			<ul>
-				<li>Why homebrew? - a brief discussion</li>
-				<li>Ingredients
-						<ul>
-							<li>Water | Malt | Hops | Yeast | Extras</li>
-						</ul>
+				<li>All Grain Brewing - Pros and Cons</li>
+				<li>All Grain Brewing Process
+					<ul>
+						<li>Terminology</li>
+						<li>Equipment</li>
+						<li>Practical Technique </li>
+					</ul>
 				</li>
-				<li>Equipment</li>
-				<li>Basic Process for Brewing Extract Recipes</li>
-				<li>"Scaling up" - tips for improved product</li>
+				<li>Beer Styles &amp; Recipe Design</li>
+				<li>Recipe Design Workshop</li>
 				<li>Questions and Discussion</li>
 			</ul>
 			
@@ -70,117 +83,72 @@
 	</section>
 	
 
-	<section class="slide"><div>
-		<h2>Why Homebrew?</h2>
+<section class="slide"><div>
+		<h2>Brewing All Grain Pros</h2>
+		<h3>Pros</h3>
 		<ul>
-			<li>Price - NO!</li>
-			<li>Appeal to the <a href="http://2.bp.blogspot.com/-4b_6zaGBBps/TgNv5ox4s1I/AAAAAAAAAJg/9w1klS3105E/s1600/thedevice.jpg">DIY</a></li>
-			<li>For the academic - study involving aesthetics, chemistry, biology, process management, and business management.</li>
-			<li>Culinary and Aesthetic Reasons</li>
-			<li>Experimental</li>
+			<li>Better control over final product</li>
+			<li>Better understanding of beer flavors and impact of
+ingredients and procedures</li>
+			<li>Opportunity for advanced or experimental
+techniques (e.g. decoction, first wort hopping)</li>
+		</ul>
 	</div></section>
-	
+
 
 	<section class="slide"><div>
-		<h2>Why Homebrew</h2>
+		<h2>Brewing All Grain Cons</h2>
+		<h3>Cons</h3>
 		<ul>
-			<li>A great hobby with vibrant sub-culture</li>
-			<li>It is legal (since 1978 in the appropriate volume 100/200 gals)
-				<ul><li>All 50 states in 2013 Mississippi and Alabama passed legislation</li></ul>
-			</li>
-			<li>Competition - BJCP and various events, regional and national</li>
-			<li>"Beer is proof that God loves us and wants us to be happy." <br><span class="next">- Ben Franklin</span></li>
-			<li>Business Plan - Jim Koch, Sam Calagione, Greg Koch etc.</li>
+			<li>Brewing process takes longer</li>
+			<li>Initial learning curve to "know your system"</li>
+			<li>Additional equipment is more expensive</li>
 		</ul>
 	</div></section>
 	
 
-	<section class="slide" id="learn"><div>
-		<h2>What Do You Hope To Learn Today?</h2>
-		<h2 class="content">Discussion</h2>
-		</div>
-	<style>
-	#learn .content { 
-		text-align: left;
-		top: 10%;
-		position: relative;
-	}
-	</style>
-	</section>
-	
-
-	<section class="slide"><div>
-		<h2>Ingredients - Some Initial Thoughts</h2>
-		<ul>
-			<li>Rheinheitsgebot</li>
-			<li>Water</li>
-			<li>Malted Barley / Grains<br>OR<br>Syrup extracted from malted barley / grains</li>
-			<li>Hops</li>
-		</ul>
-	</div></section>
-	
-
-	<section class="slide"><div>
-		<h2>Ingredients - Additional Thoughts</h2>
-		<ul>
-			<li>Who care's about Germany's legal system, anyway?</li>
-			<li>Belgian candy sugar</li>
-			<li>Spices - grains of paradise, cinnamon, nutmeg, pumpkin pie etc..</li>
-			<li>Fruit - berries, esp.
-			<li>Coffee</li>
-			<li>Bacon</li>
-			<li>Possibilities are endless!</li>
-		</ul>
+	<section class="slide cover"><div>
+		<img src="pictures/sparging.jpg" alt="Fly Sparging">
 	</div></section>
 
 	
 	<section class="slide"><div>
-		<h2>Shopping for your first homebrew</h2>
+		<h2>Step #1 - Recipe</h2>
 		<ul>
-			<li>Let's think about necessary equipment before we buy a bunch of ingredients.</li>
+			<li><b>My Recommendation</b> - Start with a kit and experiment from there.</li>
 			
 		</ul>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Shopping for your first homebrew</h2>
-		<ul>
-			<li>The "bare" essentials:
-				<ol>
-					<li>Stock Pot - 2 gallons minimum or 30qt (7.5 gallons) for full boils)</li>
-					<li>Long Spoon</li>
-					<li>Sanitizer</li>
-					<li>Food Grade Plastic Bucket w/ Tight Fitting Lid</li>
-					<li>Airlock</li>
-					<li>Plastic Tubing / Racking Cane</li>
-					<li>Bottles and caps - no "twist offs"</li>
-					<li>Bottle Capper</li>
-				</ol>
-			</li>
-			
-		</ul>
+	<section class="slide cover"><div>
+		<h2>Step #2 - Milling the Grain</h2>
+		<img src="pictures/milling.jpg" alt="Milling">	
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Step #2 - Milling the Grain</h2>
+		<img src="pictures/milled-grain.jpg" alt="Milling">	
 	</div></section>
 
 	
 	<section class="slide"><div>
-		<h2>Shopping for your first homebrew</h2>
-		<ul>
-			<li><strong>My recommendation</strong> - Look for a brewing equipment kit.</li>
-			<li><a href="http://www.midwestsupplies.com/brewing-basics-equipment-kit.html">Brewing Basics Equipment Kit</a></li>
-			<li><a href="http://www.midwestsupplies.com/brewing-starter-kit-1.html">Brewing Starter Kit - with carboy</a></li>
+		<h2>Step #2 - Milling the Grain</h2>
+		<img src="pictures/grain-mill.jpg" alt="Grain Mill" class="floatl" height="400px">
+		<ul class="floatl">
+			<li>The proper crush will determine efficiency and yield.</li>
+			<li>Homebrew supply shops will crush your  grain for you.
+					<ul>
+						<li><small>Note: Not Friar Tuck</small></li>
+					</ul>
+			</li>
+			<li>Crush as closely as you can to brewing day.</li>
 		</ul>
 	</div></section>
 
 
 	<section class="slide"><div>
-		<h2>Ingredients - Water</h2>
-		<ul>
-			<li>The "main" ingredient</li>
-			<li>Bottled Water vs Tap Water</li>
-			<li>Chlorine / Chloramine?</li>
-			<li>Water Quality Report</li>
-		</ul>
-		<p class="note">My Recommendation - Don't worry about water...yet.</p>
+		<h2>Step #3 - Mashing</h2>
+		<img src="pictures/cpvc-mainifold.jpg" alt="CPVC Manifold">
 	</div></section>
 
 
